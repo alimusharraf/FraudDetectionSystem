@@ -1,5 +1,11 @@
 # Real-Time Fraud Detection System
 
+## Live Demo
+
+Streamlit Dashboard:
+https://frauddetectionsystem-alimusharraf.streamlit.app/
+
+
 ## Description
 
 This project is an end-to-end machine learning based fraud detection system developed using the IEEE-CIS Fraud Detection dataset. The system analyzes transaction behavior and predicts whether a transaction is fraudulent or legitimate using advanced machine learning models and explainable AI techniques.
@@ -55,14 +61,13 @@ FraudDetection/
 │   ├── scaler.pkl
 │
 ├── data/
-│   ├── final_data.csv
-│   ├── train_identity.csv
-│   ├── train_transaction.csv
+│   ├── final_data_sample.csv
 │
 ├── analysis.ipynb
 ├── README.md
 ├── requirements.txt
 ```
+
 
 ## Run Project
 
@@ -98,6 +103,14 @@ streamlit run dashboard/app.py
 - Interactive Plotly Scatter Plot
 
 
+## Business Insights
+
+- XGBoost achieved the best overall fraud detection performance
+- PR-AUC was prioritized due to highly imbalanced fraud data
+- SHAP analysis identified TransactionAmt, AmtToMeanRatio, and HourOfDay as major fraud indicators
+- Critical-risk transactions showed abnormal transaction amounts and suspicious timing patterns
+
+
 ## Future Improvements
 
 - Real-time fraud monitoring
@@ -106,5 +119,3 @@ streamlit run dashboard/app.py
 - Device fingerprint analysis
 - Geolocation based fraud detection
 
-
-Machine Learning & Explainable AI Internship Project
