@@ -27,7 +27,7 @@ scaler = joblib.load('dashboard/scaler.pkl')
 
 
 # Load processed dataset
-df = pd.read_csv('data/final_data.csv')
+df = pd.read_csv('data/final_data_sample.csv')
 
 
 # Sidebar navigation menu
